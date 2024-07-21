@@ -13,7 +13,7 @@ const Login = ({ setUser }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState("");
   const [isChecked, setIsChecked] = useState(false);
-  const [ setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setPhone(e.target.value);
