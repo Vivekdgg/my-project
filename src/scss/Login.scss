@@ -1,0 +1,44 @@
+
+.formsection{
+    margin-top: 0%;
+    width: 70%;
+input
+{
+    width: 70%;
+    height: 7vh;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.input-type
+{
+    width: 100%;
+    margin: 3% auto 0;
+}
+
+.checkboxHolder
+{
+    width: 65%;
+    margin: 2% auto 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.checkBoxContainer
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 6%;
+}
+.checkBox{
+    width: 9%;
+}
+
+.chcekboxText{
+    font-size: 10px;
+    color: #fff;
+    margin-left: 0%;
+}
+}

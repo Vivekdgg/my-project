@@ -1,0 +1,42 @@
+.custom-btn {
+  padding: 10px 45px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+
+  .buttonclass
+  {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    height: 16vh;
+    padding: 30px;
+    animation: animate__animated; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+  }
+  
+  .custom-btn:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+  }
+  
+  .custom-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .custom-btn-primary {
+    background-color: blue;
+    color: white;
+  }
+  
+  .custom-btn-secondary {
+    background-color: gray;
+    color: white;
+  }
