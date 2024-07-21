@@ -142,7 +142,7 @@ const Login = ({ setUser }) => {
               </div>
             </div>
             <Link>
-              <CustomButton text="Login" onClick={handleLogin} />
+              <CustomButton text="Login" onClick={handleLogin} value = {isSubmitted} />
             </Link>
             {showPopup && (
               <Popup

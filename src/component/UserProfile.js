@@ -15,7 +15,7 @@ const UserProfile = ({user}) => {
         <div className="rightmainContainer">
       
           <div className="logo">
-            <img src="Assets/Oreo.png"></img>
+            <img src="Assets/Oreo.png" alt="set"></img>
           </div>
         </div>
       </div>
