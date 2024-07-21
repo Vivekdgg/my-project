@@ -4,16 +4,16 @@ import BackButton from "./BackButton";
 import CustomButton from "./CustomButton";
 import Popup from "./Popup";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 const Login = ({ setUser }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [phone, setPhone] = useState("");
   const [error, setError] = useState("");
   const hasFetched = useRef(false);
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState("");
   const [isChecked, setIsChecked] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [ setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setPhone(e.target.value);
@@ -64,36 +64,14 @@ const Login = ({ setUser }) => {
       setShowPopup(false);
     }
   };
-  // const handleLogin = async (event) => {
-  //   // event.preventDefault();
 
-  //   // const result = await fetch(
-  //   //   `https://www.newsfeedsmartapp.com/Vivektest/api/react/user.php`,
-  //   //   options
-  //   // );
-  //   // const finaldata1 = await result.json();
-  //   // console.log(finaldata1, "asdasd");
-  //   console.log("Login initiated");
-  //   // try {
-  //   //   if (finaldata1.code === 200) {
-  //   //     navigate("/userprofile");
-  //   //     setUser({
-  //   //       name: finaldata1.name,
-  //   //     });
-  //   //   } else {
-  //   //     setError(finaldata1.message);
-  //   //         }
-  //   // } catch (error) {
-  //   //     console.error("An error occurred: ", error);
-  //   // }
-  // };
 
   useEffect(() => {
     if (!hasFetched.current) {
       handleLogin();
       hasFetched.current = true;
     }
-  }, []);
+  });
 
   return (
     <div className="container">
@@ -108,7 +86,7 @@ const Login = ({ setUser }) => {
           <img src="Assets/Bg.jpg" alt="set" className="rightimg"></img>
           <div className="rightmainContainer">
             <div className="logo">
-              <img src="Assets/Oreo.png"></img>
+              <img src="Assets/Oreo.png" alt="set"></img>
             </div>
             <div className="formsection">
               <div className="input-type">
@@ -133,7 +111,7 @@ const Login = ({ setUser }) => {
               <div className="checkboxHolder">
                 <div className="checkBoxContainer">
                   <div className="checkBox">
-                    <img  src={isChecked ? 'Assets/Close-button.png' : 'Assets/Unticked.png'} onClick={handleCheckboxClick}></img>
+                    <img src={isChecked ? 'Assets/Close-button.png' : 'Assets/Unticked.png'} onClick={handleCheckboxClick} alt="set"></img>
                   </div>
                   <div className="chcekboxText">
                     <span>
@@ -148,7 +126,7 @@ const Login = ({ setUser }) => {
                 </div>
                 <div className="checkBoxContainer">
                   <div className="checkBox">
-                    <img src="Assets/Unticked.png"></img>
+                    <img src="Assets/Unticked.png" alt="set"></img>
                   </div>
                   <div className="chcekboxText">
                     <span>

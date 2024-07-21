@@ -19,10 +19,10 @@ const FirstPage = () => {
           <img src="Assets/Bg.jpg" alt="set" className="rightimg"></img>
           <div className="rightmainContainer">
             <div className="logo">
-              <img src="Assets/Oreo.png"></img>
+              <img src="Assets/Oreo.png" alt="set"></img>
             </div>
             <div className="collection">
-              <img src="Assets/Doodle-strip2.png"></img>
+              <img src="Assets/Doodle-strip2.png" alt="set"></img>
             </div>
             <div className="lang">Select your Language</div>
             <div className="buttonclass">
